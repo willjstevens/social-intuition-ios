@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Intuition-->
+        <scene sceneID="1kW-kW-RSc">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ABn-QZ-90b" customClass="AddIntuitionViewController" customModule="SocialIntuition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JAQ-25-nej"/>
+                        <viewControllerLayoutGuide type="bottom" id="SNh-11-xd3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qxw-lA-scT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RBp-dt-Tle">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1387"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2j-mv-1yz" userLabel="Container View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EHD-tq-of4" userLabel="Intuition Stack">
+                                                <rect key="frame" x="8" y="8" width="359" height="1348.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Describe your intuition and add a photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhG-BO-k2n" userLabel="Describe your intuition and add a photo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Grc-qa-tRZ">
+                                                        <rect key="frame" x="0.0" y="27.5" width="359" height="96"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RGq-R3-Cl4">
+                                                                <rect key="frame" x="8" y="8" width="343" height="80"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="nTW-tk-mM8">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="80" id="Jvm-1h-LmB"/>
+                                                                            <constraint firstAttribute="height" constant="80" id="gpu-Dv-czF"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ktc-WJ-yLb" userLabel="IntuitionText">
+                                                                        <rect key="frame" x="90" y="0.0" width="253" height="80"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                                    </textView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="RGq-R3-Cl4" secondAttribute="bottom" constant="8" id="EDD-HJ-ac0"/>
+                                                            <constraint firstAttribute="trailing" secondItem="RGq-R3-Cl4" secondAttribute="trailing" constant="8" id="KLo-my-eAa"/>
+                                                            <constraint firstItem="RGq-R3-Cl4" firstAttribute="leading" secondItem="Grc-qa-tRZ" secondAttribute="leading" constant="8" id="SwM-s5-ttV"/>
+                                                            <constraint firstItem="RGq-R3-Cl4" firstAttribute="top" secondItem="Grc-qa-tRZ" secondAttribute="top" constant="8" id="rWc-MM-Hc8"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intuition is required" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-zO-7oK">
+                                                        <rect key="frame" x="0.0" y="131.5" width="359" height="12"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QpB-ev-fOj">
+                                                        <rect key="frame" x="0.0" y="151.5" width="359" height="10"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="10" id="zZL-ti-nYT"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcH-66-w5R">
+                                                        <rect key="frame" x="0.0" y="169.5" width="359" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9qh-zN-BJq">
+                                                        <rect key="frame" x="0.0" y="194.5" width="359" height="29"/>
+                                                        <segments>
+                                                            <segment title="True False"/>
+                                                            <segment title="Yes No"/>
+                                                            <segment title="Multiple Choice"/>
+                                                        </segments>
+                                                        <color key="tintColor" red="0.2784313725" green="0.2156862745" blue="0.3294117647" alpha="0.75" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <action selector="predictionTypeChanged:" destination="ABn-QZ-90b" eventType="valueChanged" id="78x-4e-mM7"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHb-iX-zJ5">
+                                                        <rect key="frame" x="0.0" y="230.5" width="359" height="10"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="10" id="sNS-ei-baD"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A66-WZ-XJR" userLabel="Multiple Choice Outcomes Stack View">
+                                                        <rect key="frame" x="0.0" y="248.5" width="359" height="112"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outcome choices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzF-BA-0OM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="359" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outcome choice added" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVa-w9-2W3">
+                                                                <rect key="frame" x="0.0" y="25" width="359" height="12"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add an outcome choice" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kc3-L2-XVe" userLabel="Add Outcome Textfield">
+                                                                <rect key="frame" x="0.0" y="45" width="359" height="30"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsf-9d-XSX" userLabel="Add Outcome Button">
+                                                                <rect key="frame" x="0.0" y="83" width="359" height="29"/>
+                                                                <color key="backgroundColor" red="0.27843137254901962" green="0.21568627450980393" blue="0.32941176470588235" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <state key="normal" title="Add Outcome Choice">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="addOutcome_touchUpInside:" destination="ABn-QZ-90b" eventType="touchUpInside" id="UHu-rA-6Ny"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Predicted Outcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKM-3q-qBc">
+                                                        <rect key="frame" x="0.0" y="368.5" width="359" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAf-rW-phE" userLabel="Select Predicted Outcome">
+                                                        <rect key="frame" x="0.0" y="393.5" width="359" height="29"/>
+                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <state key="normal" title="Select">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="selectPredictedOutcome:" destination="ABn-QZ-90b" eventType="touchUpInside" id="WFm-nm-ROV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <pickerView tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bff-zQ-uYh" userLabel="Predicted Outcome Picker">
+                                                        <rect key="frame" x="0.0" y="430.5" width="359" height="216"/>
+                                                    </pickerView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Predicted outcome is required" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVe-a1-UIa" userLabel="Predicted outcome is required">
+                                                        <rect key="frame" x="0.0" y="654.5" width="359" height="12"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPA-AY-eNK">
+                                                        <rect key="frame" x="0.0" y="674.5" width="359" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="T5L-U5-dqM">
+                                                        <rect key="frame" x="0.0" y="699.5" width="359" height="29"/>
+                                                        <segments>
+                                                            <segment title="Public"/>
+                                                            <segment title="Cohorts"/>
+                                                            <segment title="Private"/>
+                                                        </segments>
+                                                        <color key="tintColor" red="0.2784313725" green="0.2156862745" blue="0.3294117647" alpha="0.75" colorSpace="calibratedRGB"/>
+                                                    </segmentedControl>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLb-fq-jCG">
+                                                        <rect key="frame" x="0.0" y="735.5" width="359" height="27"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                        <state key="normal" title="OPTIONS">
+                                                            <color key="titleColor" white="0.0" alpha="0.75" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="optionsButton_touchUpInside:" destination="ABn-QZ-90b" eventType="touchUpInside" id="dc1-Yn-ko9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B5r-Pq-i3r">
+                                                        <rect key="frame" x="0.0" y="770.5" width="359" height="154"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="ScoreIntuitionStackView" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ofO-S9-6Fe" userLabel="ScoreIntuitionStackView">
+                                                                <rect key="frame" x="0.0" y="0.0" width="359" height="31"/>
+                                                                <subviews>
+                                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" restorationIdentifier="ScoreIntuitionSwitch" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSK-mU-5F1" userLabel="ScoreIntuitionSwitch">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="ScoreIntuitionSwitch"/>
+                                                                    </switch>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score intuition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjP-o2-8kV" userLabel="ScoreIntuitionLabel">
+                                                                        <rect key="frame" x="59" y="0.0" width="300" height="31"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="ScoreIntuitionLabel"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pe5-nK-gXO" userLabel="Stack View 2">
+                                                                <rect key="frame" x="0.0" y="41" width="359" height="31"/>
+                                                                <subviews>
+                                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vr2-Op-I2N">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                    </switch>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show predicted outcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdw-cb-sYN">
+                                                                        <rect key="frame" x="59" y="0.0" width="300" height="31"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nce-oK-VnV" userLabel="Stack View 3">
+                                                                <rect key="frame" x="0.0" y="82" width="359" height="31"/>
+                                                                <subviews>
+                                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLH-WL-HGC">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                    </switch>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow cohorts to vote on outcomes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7d-FI-J1n">
+                                                                        <rect key="frame" x="59" y="0.0" width="300" height="31"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZDz-0b-o15" userLabel="AllowCohortsContributeOutcomesStackView">
+                                                                <rect key="frame" x="0.0" y="123" width="359" height="31"/>
+                                                                <subviews>
+                                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P43-th-w8Z">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                    </switch>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow cohorts to contribute outcomes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMz-4j-azw">
+                                                                        <rect key="frame" x="59" y="0.0" width="300" height="31"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active Window" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeU-yG-AIh">
+                                                        <rect key="frame" x="0.0" y="932.5" width="359" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nex-Ur-bJz" userLabel="Select Active Window">
+                                                        <rect key="frame" x="0.0" y="957.5" width="359" height="29"/>
+                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <state key="normal" title="Select">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="selectActiveWindow:" destination="ABn-QZ-90b" eventType="touchUpInside" id="YjC-gj-XcV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <pickerView tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyH-WB-msx" userLabel="Active Window Picker">
+                                                        <rect key="frame" x="0.0" y="994.5" width="359" height="216"/>
+                                                    </pickerView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active window is required" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZG-ed-qn5" userLabel="Active window is required">
+                                                        <rect key="frame" x="0.0" y="1218.5" width="359" height="12"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEU-uW-1lX">
+                                                        <rect key="frame" x="0.0" y="1238.5" width="359" height="10"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="10" id="BHj-RJ-vnQ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALn-zU-g57">
+                                                        <rect key="frame" x="0.0" y="1256.5" width="359" height="44"/>
+                                                        <color key="backgroundColor" red="0.27843137254901962" green="0.21568627450980393" blue="0.32941176470588235" alpha="0.75" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="foR-0G-nMY"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Add Intuition">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="submitAddIntuition:" destination="ABn-QZ-90b" eventType="touchUpInside" id="xE5-cW-HXB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1W-j0-stG">
+                                                        <rect key="frame" x="0.0" y="1308.5" width="359" height="40"/>
+                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="ipj-oT-5jT"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Cancel">
+                                                            <color key="titleColor" white="0.0" alpha="0.75" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="cancelButton:" destination="ABn-QZ-90b" eventType="touchUpInside" id="1aN-2n-o1T"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="EHD-tq-of4" firstAttribute="top" secondItem="L2j-mv-1yz" secondAttribute="topMargin" id="SAJ-hs-HEf"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="EHD-tq-of4" secondAttribute="trailing" id="YdJ-5a-e8h"/>
+                                            <constraint firstItem="EHD-tq-of4" firstAttribute="leading" secondItem="L2j-mv-1yz" secondAttribute="leadingMargin" id="hMa-i4-i4j"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="L2j-mv-1yz" firstAttribute="leading" secondItem="RBp-dt-Tle" secondAttribute="leading" id="Mcq-3z-Xes"/>
+                                    <constraint firstAttribute="bottom" secondItem="L2j-mv-1yz" secondAttribute="bottom" id="Phu-rj-cf6"/>
+                                    <constraint firstItem="L2j-mv-1yz" firstAttribute="top" secondItem="RBp-dt-Tle" secondAttribute="top" id="TIB-Hy-Lwz"/>
+                                    <constraint firstAttribute="trailing" secondItem="L2j-mv-1yz" secondAttribute="trailing" id="bRh-U8-08D"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SNh-11-xd3" firstAttribute="top" secondItem="RBp-dt-Tle" secondAttribute="bottom" id="9GN-IR-ALh"/>
+                            <constraint firstAttribute="trailing" secondItem="RBp-dt-Tle" secondAttribute="trailing" id="Xen-T0-ItN"/>
+                            <constraint firstItem="RBp-dt-Tle" firstAttribute="top" secondItem="JAQ-25-nej" secondAttribute="bottom" id="aYX-Bk-lUs"/>
+                            <constraint firstItem="L2j-mv-1yz" firstAttribute="height" secondItem="qxw-lA-scT" secondAttribute="height" id="f9L-q3-XDP"/>
+                            <constraint firstItem="RBp-dt-Tle" firstAttribute="leading" secondItem="qxw-lA-scT" secondAttribute="leading" id="ihB-p2-iCY"/>
+                            <constraint firstItem="L2j-mv-1yz" firstAttribute="width" secondItem="qxw-lA-scT" secondAttribute="width" id="vEx-2F-ffe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Intuition" id="eQE-GT-TWN"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1500"/>
+                    <connections>
+                        <outlet property="activeWindowPicker" destination="DyH-WB-msx" id="Gxl-U9-P71"/>
+                        <outlet property="activeWindowRequiredError" destination="IZG-ed-qn5" id="G3D-Dn-Cbt"/>
+                        <outlet property="addIntuitionButton" destination="ALn-zU-g57" id="TGS-wb-6PU"/>
+                        <outlet property="addOutcomeChoiceButton" destination="tsf-9d-XSX" id="vVw-8C-U8b"/>
+                        <outlet property="allowCohortsContributionStackView" destination="ZDz-0b-o15" id="Ecd-cx-nFk"/>
+                        <outlet property="allowCohortsToContributePredictedOutcomes" destination="P43-th-w8Z" id="Aw0-0a-Z4H"/>
+                        <outlet property="allowPredictedOutcomeStackView" destination="Nce-oK-VnV" id="6O6-M8-dg9"/>
+                        <outlet property="allowPredictedOutcomeVoting" destination="aLH-WL-HGC" id="Ipa-pB-2cC"/>
+                        <outlet property="cancelButton" destination="l1W-j0-stG" id="77z-vV-FlF"/>
+                        <outlet property="displayPrediction" destination="Vr2-Op-I2N" id="6YZ-px-vcg"/>
+                        <outlet property="displayPredictionStackView" destination="Pe5-nK-gXO" id="KJH-1D-Ww1"/>
+                        <outlet property="imageView" destination="nTW-tk-mM8" id="tgU-lg-SDX"/>
+                        <outlet property="intuitionRequiredError" destination="bO1-zO-7oK" id="14K-fj-RvQ"/>
+                        <outlet property="intuitionText" destination="Ktc-WJ-yLb" id="x0l-Pt-dVl"/>
+                        <outlet property="multipleChoiceStaceView" destination="A66-WZ-XJR" id="cD6-7R-ZDU"/>
+                        <outlet property="optionsButton" destination="tLb-fq-jCG" id="JBs-0H-QVI"/>
+                        <outlet property="optionsStackView" destination="B5r-Pq-i3r" id="r3t-Jf-aUA"/>
+                        <outlet property="outcomeChoiceAddedLabel" destination="HVa-w9-2W3" id="Bia-Kc-tXN"/>
+                        <outlet property="outcomeChoiceTextfield" destination="kc3-L2-XVe" id="uXI-BJ-iTZ"/>
+                        <outlet property="outcomeChoicesLabel" destination="EzF-BA-0OM" id="1jc-TF-AMu"/>
+                        <outlet property="predictedOutcome" destination="Bff-zQ-uYh" id="Hv0-Ey-NgZ"/>
+                        <outlet property="predictedOutcomeLabel" destination="yKM-3q-qBc" id="cRh-Jm-cbf"/>
+                        <outlet property="predictedOutcomeRequiredError" destination="AVe-a1-UIa" id="D0Z-jz-PKI"/>
+                        <outlet property="predictedOutcomeType" destination="9qh-zN-BJq" id="tzC-M5-x5x"/>
+                        <outlet property="predictedTypeTitle" destination="YcH-66-w5R" id="3kp-Iy-Evs"/>
+                        <outlet property="scoreIntuition" destination="LSK-mU-5F1" id="uoB-sK-Dbu"/>
+                        <outlet property="scoreIntuitionStackView" destination="ofO-S9-6Fe" id="whg-dl-9Q5"/>
+                        <outlet property="scrollView" destination="RBp-dt-Tle" id="e2h-Lh-huH"/>
+                        <outlet property="selectActiveWindowButton" destination="nex-Ur-bJz" id="4Ww-dO-zu3"/>
+                        <outlet property="selectPredictedOutcomeButton" destination="HAf-rW-phE" id="S3D-hW-QIB"/>
+                        <outlet property="visibility" destination="T5L-U5-dqM" id="TVL-Ha-bzG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fk3-o9-wdy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="181.70914542728636"/>
+        </scene>
+        <!--Intuition-->
+        <scene sceneID="4h5-6H-XaE">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationAddIntuition" automaticallyAdjustsScrollViewInsets="NO" id="ohh-5j-kVu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Intuition" image="709-plus" selectedImage="709-plus-selected" id="89C-f7-pbQ"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pxj-p9-cfT">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ABn-QZ-90b" kind="relationship" relationship="rootViewController" id="YTB-mC-6nU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sd6-9I-eXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="L59-Ea-LEF">
+                    <rect key="frame" x="0.0" y="0.0" width="343" height="887"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="628" y="-960"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="709-plus" width="28" height="28"/>
+        <image name="709-plus-selected" width="28" height="28"/>
+        <image name="Placeholder-image" width="840" height="600"/>
+    </resources>
+</document>

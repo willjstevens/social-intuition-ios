@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IPw-FO-dSf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cohort List View Controller-->
+        <scene sceneID="b3F-ky-0cP">
+            <objects>
+                <viewController storyboardIdentifier="CohortListId" id="IPw-FO-dSf" customClass="CohortListViewController" customModule="SocialIntuition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Azm-Bt-K7O"/>
+                        <viewControllerLayoutGuide type="bottom" id="MsL-2Z-pMj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QrC-QI-dfd">
+                        <rect key="frame" x="0.0" y="64" width="600" height="936"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="123" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8eL-4y-Qgg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="887"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CohortCell" rowHeight="123" id="Pgg-G7-L5T" userLabel="CohortCell" customClass="CohortListTableViewCell" customModule="SocialIntuition" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="123"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pgg-G7-L5T" id="hLp-Yj-iNC">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="122.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9C7-O9-Tzt">
+                                                    <rect key="frame" x="8" y="8" width="584" height="106.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="g1p-el-hnm">
+                                                            <rect key="frame" x="0.0" y="28" width="50" height="50.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="g1p-el-hnm" secondAttribute="height" multiplier="1:1" id="1by-CT-jyj"/>
+                                                                <constraint firstAttribute="width" constant="50" id="oFC-sW-3dM"/>
+                                                                <constraint firstAttribute="height" constant="50" id="vDv-t2-x24"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Author Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PC-rY-U2V">
+                                                            <rect key="frame" x="70" y="43" width="514" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="9C7-O9-Tzt" secondAttribute="bottom" id="FKn-9r-hU7"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="9C7-O9-Tzt" secondAttribute="trailing" id="NMX-Of-xiu"/>
+                                                <constraint firstItem="9C7-O9-Tzt" firstAttribute="top" secondItem="hLp-Yj-iNC" secondAttribute="topMargin" id="PPP-Bp-viR"/>
+                                                <constraint firstItem="9C7-O9-Tzt" firstAttribute="leading" secondItem="hLp-Yj-iNC" secondAttribute="leadingMargin" id="Swn-d9-2Le"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fullNameLabel" destination="6PC-rY-U2V" id="R6G-1X-q3H"/>
+                                            <outlet property="profileImageView" destination="g1p-el-hnm" id="sPx-yJ-QjG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8eL-4y-Qgg" firstAttribute="top" secondItem="Azm-Bt-K7O" secondAttribute="bottom" id="6Ms-Ep-wKK"/>
+                            <constraint firstItem="MsL-2Z-pMj" firstAttribute="top" secondItem="8eL-4y-Qgg" secondAttribute="bottom" id="7K8-vw-xfp"/>
+                            <constraint firstAttribute="trailing" secondItem="8eL-4y-Qgg" secondAttribute="trailing" id="Cgt-ud-owG"/>
+                            <constraint firstItem="8eL-4y-Qgg" firstAttribute="leading" secondItem="QrC-QI-dfd" secondAttribute="leading" id="v8j-ro-Blg"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1000"/>
+                    <connections>
+                        <outlet property="tableView" destination="8eL-4y-Qgg" id="kzw-AY-TPe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxe-7b-wQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620.79999999999995" y="1938.5307346326838"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Placeholder-image" width="840" height="600"/>
+    </resources>
+</document>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYt-FA-FEh">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="Pto-Y6-9R1">
+            <objects>
+                <pageViewController storyboardIdentifier="walkthrough" autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="flipHorizontal" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="BYt-FA-FEh" customClass="WalkthroughPageViewController" customModule="SocialIntuition" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZj-gz-HMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="28"/>
+        </scene>
+        <!--TabBarId-->
+        <scene sceneID="4IC-Wv-tML">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="TabBarId" id="lgh-3u-j5B" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQR-LE-0dl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2794" y="820"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dbJ-JX-aIG">
+            <objects>
+                <viewController storyboardIdentifier="activityFeedViewController" id="Rfs-xf-41y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AJM-jM-k3W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TlC-Mb-VdL">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Activity Feed Walkthrough" translatesAutoresizingMaskIntoConstraints="NO" id="yNM-TB-edU">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="718"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7UO-MB-TQ4">
+                                        <rect key="frame" x="0.0" y="718" width="375" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="i1C-Kn-mna"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TlC-Mb-VdL" secondAttribute="bottom" id="9BZ-yb-35O"/>
+                            <constraint firstItem="TlC-Mb-VdL" firstAttribute="leading" secondItem="ypq-bG-AQb" secondAttribute="leading" id="RHh-25-g7J"/>
+                            <constraint firstItem="TlC-Mb-VdL" firstAttribute="top" secondItem="ypq-bG-AQb" secondAttribute="top" id="SRi-Vb-Yjm"/>
+                            <constraint firstAttribute="trailing" secondItem="TlC-Mb-VdL" secondAttribute="trailing" id="uRD-SM-wXG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ypq-bG-AQb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M9c-kl-SOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-482.39999999999998" y="816.34182908545733"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aFD-TS-zaQ">
+            <objects>
+                <viewController storyboardIdentifier="addIntuitionViewController" id="YGo-Sd-afi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2sm-Ag-67s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cKb-fU-Gcz">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add Intuition Walkthrough" translatesAutoresizingMaskIntoConstraints="NO" id="wma-GM-18r">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="718"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JwC-Zc-uff">
+                                        <rect key="frame" x="0.0" y="718" width="375" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="xt3-iG-Q4B"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="cKb-fU-Gcz" firstAttribute="top" secondItem="ZA1-Ph-ml6" secondAttribute="top" id="5tE-4V-VNm"/>
+                            <constraint firstAttribute="bottom" secondItem="cKb-fU-Gcz" secondAttribute="bottom" id="FVK-Jg-PtZ"/>
+                            <constraint firstItem="cKb-fU-Gcz" firstAttribute="leading" secondItem="ZA1-Ph-ml6" secondAttribute="leading" id="Knx-AG-wrw"/>
+                            <constraint firstItem="cKb-fU-Gcz" firstAttribute="trailing" secondItem="ZA1-Ph-ml6" secondAttribute="trailing" id="NsX-p6-8NU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZA1-Ph-ml6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6B4-Tx-iqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="356" y="820.83958020989508"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tqi-dm-usH">
+            <objects>
+                <viewController storyboardIdentifier="outcomeViewController" id="eJ7-Ay-naG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ef-Ab-1ad">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zGk-4O-L8f">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Outcome Walkthrough" translatesAutoresizingMaskIntoConstraints="NO" id="cKn-cp-Eoy">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="718"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebb-HL-5B6">
+                                        <rect key="frame" x="0.0" y="718" width="375" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="tFG-Ca-tMO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zGk-4O-L8f" secondAttribute="bottom" id="1C5-s5-5hg"/>
+                            <constraint firstItem="zGk-4O-L8f" firstAttribute="top" secondItem="y9W-iq-DDb" secondAttribute="top" id="2H9-Q7-lG8"/>
+                            <constraint firstItem="zGk-4O-L8f" firstAttribute="leading" secondItem="y9W-iq-DDb" secondAttribute="leading" id="Mo6-vW-KIJ"/>
+                            <constraint firstItem="zGk-4O-L8f" firstAttribute="trailing" secondItem="y9W-iq-DDb" secondAttribute="trailing" id="nI6-Lu-Ea6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="y9W-iq-DDb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSA-M5-HWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160.8" y="823.53823088455783"/>
+        </scene>
+        <!--Walkthrough Final View Controller-->
+        <scene sceneID="Mgs-dn-5sF">
+            <objects>
+                <viewController storyboardIdentifier="profileViewController" id="0Sj-Yp-GGe" customClass="WalkthroughFinalViewController" customModule="SocialIntuition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bDS-o8-yAk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4nw-8i-cxK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile Walkthrough" translatesAutoresizingMaskIntoConstraints="NO" id="vT0-AP-9Av">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="712"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nnp-J2-cis">
+                                        <rect key="frame" x="0.0" y="712" width="375" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEX-6C-boL">
+                                                <rect key="frame" x="5" y="10" width="365" height="40"/>
+                                                <color key="backgroundColor" red="0.28627450980000002" green="0.21176470589999999" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="pi0-62-CiU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                                <state key="normal" title="GET STARTED">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="exitButton:" destination="0Sj-Yp-GGe" eventType="touchUpInside" id="j2D-kq-Xu7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="kEX-6C-boL" secondAttribute="bottom" id="B6X-fK-1z4"/>
+                                            <constraint firstAttribute="trailing" secondItem="kEX-6C-boL" secondAttribute="trailing" constant="5" id="ELV-TN-0gT"/>
+                                            <constraint firstItem="kEX-6C-boL" firstAttribute="leading" secondItem="Nnp-J2-cis" secondAttribute="leading" constant="5" id="qou-qE-Sss"/>
+                                            <constraint firstItem="kEX-6C-boL" firstAttribute="top" secondItem="Nnp-J2-cis" secondAttribute="top" constant="10" id="xqq-11-JYF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5u-0Z-ibZ">
+                                        <rect key="frame" x="0.0" y="762" width="375" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="V4h-Wk-WGN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="4nw-8i-cxK" firstAttribute="trailing" secondItem="2qH-N6-daI" secondAttribute="trailing" id="E3G-Jn-sBP"/>
+                            <constraint firstItem="4nw-8i-cxK" firstAttribute="top" secondItem="bDS-o8-yAk" secondAttribute="top" id="f5t-am-Xi8"/>
+                            <constraint firstItem="4nw-8i-cxK" firstAttribute="leading" secondItem="2qH-N6-daI" secondAttribute="leading" id="lUQ-ul-gGX"/>
+                            <constraint firstAttribute="bottom" secondItem="4nw-8i-cxK" secondAttribute="bottom" id="xZJ-7s-9fG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2qH-N6-daI"/>
+                    </view>
+                    <connections>
+                        <outlet property="exitButton" destination="kEX-6C-boL" id="7EA-QF-j3H"/>
+                        <segue destination="lgh-3u-j5B" kind="presentation" identifier="showTabbar" id="lPp-Dl-6H8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56A-am-WFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="819.45812807881782"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Activity Feed Walkthrough" width="375" height="812"/>
+        <image name="Add Intuition Walkthrough" width="375" height="812"/>
+        <image name="Outcome Walkthrough" width="375" height="812"/>
+        <image name="Profile Walkthrough" width="375" height="812"/>
+    </resources>
+</document>

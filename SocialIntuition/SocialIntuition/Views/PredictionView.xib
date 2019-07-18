@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PredictionView" customModule="SocialIntuition" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="iw2-JH-qz9"/>
+                <outlet property="mainContentStackView" destination="NdB-NT-N47" id="7PR-ri-Tur"/>
+                <outlet property="outerStackView" destination="6vo-Xm-scW" id="lxT-MM-ApS"/>
+                <outlet property="predictionTextLabel" destination="Mjt-bd-ivV" id="cNF-9d-Kg7"/>
+                <outlet property="separatorView" destination="nKc-oX-z7v" id="tjx-y6-hTo"/>
+                <outlet property="starImageView" destination="beb-UC-RDs" id="saT-UA-1QF"/>
+                <outlet property="tagImageView" destination="IwP-yI-QjD" id="YT9-jM-aTI"/>
+                <outlet property="voteButton" destination="q5K-lG-Bi7" id="SkX-lP-gKk"/>
+                <outlet property="votedByYouLabel" destination="nFz-uT-S1z" id="dac-Fl-V2j"/>
+                <outlet property="votesButton" destination="zAS-4P-KSi" id="jXn-vX-sfo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6vo-Xm-scW">
+                    <rect key="frame" x="20" y="0.0" width="404" height="45"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NdB-NT-N47" userLabel="Main Content Stack View">
+                            <rect key="frame" x="0.0" y="0.0" width="404" height="39.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Prediction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mjt-bd-ivV" userLabel="Prediction">
+                                    <rect key="frame" x="0.0" y="11.5" width="194.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="726-star-toolbar" translatesAutoresizingMaskIntoConstraints="NO" id="beb-UC-RDs">
+                                    <rect key="frame" x="199.5" y="13" width="14" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="beb-UC-RDs" secondAttribute="height" multiplier="1:1" id="CiD-6c-bgf"/>
+                                        <constraint firstAttribute="width" priority="999" constant="14" id="FIZ-0d-LOT"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voted by You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFz-uT-S1z" userLabel="Voted By You">
+                                    <rect key="frame" x="218.5" y="12.5" width="74.5" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="747-tag" translatesAutoresizingMaskIntoConstraints="NO" id="IwP-yI-QjD" userLabel="Tag Image View">
+                                    <rect key="frame" x="298" y="13" width="14" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" priority="999" constant="14" id="DAs-2U-8SR"/>
+                                        <constraint firstAttribute="width" secondItem="IwP-yI-QjD" secondAttribute="height" multiplier="1:1" id="cK9-B1-l4O"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAS-4P-KSi" userLabel="Votes Button">
+                                    <rect key="frame" x="317" y="6.5" width="32" height="27"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Votes">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="whoVotedButton:" destination="-1" eventType="touchUpInside" id="0lv-9g-Z2K"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5K-lG-Bi7" userLabel="Vote Button">
+                                    <rect key="frame" x="354" y="8" width="50" height="23.5"/>
+                                    <color key="backgroundColor" red="0.2784313725" green="0.2156862745" blue="0.3294117647" alpha="0.75433433220000001" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="999" constant="24" id="mmB-q8-KK3"/>
+                                        <constraint firstAttribute="width" priority="999" constant="50" id="s4i-Rv-buX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                    <state key="normal" title="VOTE">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="voteButton_touchupInside:" destination="-1" eventType="touchUpInside" id="Unl-id-0z2"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKc-oX-z7v" userLabel="Separator">
+                            <rect key="frame" x="0.0" y="44.5" width="404" height="0.5"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="999" constant="0.5" id="iTh-wI-75p"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottomMargin" secondItem="6vo-Xm-scW" secondAttribute="bottom" priority="999" id="5gp-tH-9rO"/>
+                <constraint firstAttribute="trailingMargin" secondItem="6vo-Xm-scW" secondAttribute="trailing" priority="999" id="R0H-dn-me3"/>
+                <constraint firstItem="6vo-Xm-scW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="999" id="cYn-3Y-We1"/>
+                <constraint firstItem="6vo-Xm-scW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" priority="999" id="n9a-gK-baR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-14" y="-119.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="726-star-toolbar" width="22" height="22"/>
+        <image name="747-tag" width="28" height="28"/>
+    </resources>
+</document>

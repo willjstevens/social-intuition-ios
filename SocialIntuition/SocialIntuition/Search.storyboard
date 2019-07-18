@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="bq1-40-94L">
+            <objects>
+                <viewController id="oAn-Bp-5c5" customClass="SearchViewController" customModule="SocialIntuition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tpv-0X-13y"/>
+                        <viewControllerLayoutGuide type="bottom" id="bcJ-Hc-jhc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cj4-Xy-33u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="knD-hO-cbJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CohortSearchTableViewCell" rowHeight="75" id="7jn-0Z-OGT" customClass="CohortSearchTableViewCell" customModule="SocialIntuition" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7jn-0Z-OGT" id="k2t-mT-gWV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fhl-43-IzI">
+                                                    <rect key="frame" x="15" y="11" width="345" height="53"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="hc1-pj-Jjf">
+                                                            <rect key="frame" x="0.0" y="1.5" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" priority="999" constant="50" id="5Sn-Oh-n6i"/>
+                                                                <constraint firstAttribute="height" priority="999" constant="50" id="8sB-gf-29j"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb6-Vy-hbB">
+                                                            <rect key="frame" x="65" y="16.5" width="280" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fhl-43-IzI" secondAttribute="trailing" id="khF-jw-h4w"/>
+                                                <constraint firstItem="fhl-43-IzI" firstAttribute="top" secondItem="k2t-mT-gWV" secondAttribute="topMargin" id="lxp-Uc-Bsh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fhl-43-IzI" secondAttribute="bottom" id="meF-CK-Gvz"/>
+                                                <constraint firstItem="fhl-43-IzI" firstAttribute="leading" secondItem="k2t-mT-gWV" secondAttribute="leadingMargin" id="pNv-0i-oEk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="profileImageView" destination="hc1-pj-Jjf" id="6h2-NQ-C5l"/>
+                                            <outlet property="userFullNameLabel" destination="Pb6-Vy-hbB" id="KQL-Qj-7n6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="knD-hO-cbJ" firstAttribute="leading" secondItem="Cj4-Xy-33u" secondAttribute="leading" id="JHY-13-IOz"/>
+                            <constraint firstItem="knD-hO-cbJ" firstAttribute="top" secondItem="Cj4-Xy-33u" secondAttribute="top" id="eEz-AZ-Qez"/>
+                            <constraint firstItem="bcJ-Hc-jhc" firstAttribute="top" secondItem="knD-hO-cbJ" secondAttribute="bottom" id="oMn-Df-wkq"/>
+                            <constraint firstAttribute="trailing" secondItem="knD-hO-cbJ" secondAttribute="trailing" id="xR3-zI-8Is"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2S1-y2-mcQ"/>
+                    <connections>
+                        <outlet property="tableView" destination="knD-hO-cbJ" id="Asl-0S-qjI"/>
+                        <segue destination="LeK-wQ-cFn" kind="show" identifier="profileSegue" id="OuD-fU-gHo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o02-vl-O6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562.39999999999998" y="-13.043478260869566"/>
+        </scene>
+        <!--ProfileId-->
+        <scene sceneID="aOU-PB-Z7r">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfileId" id="LeK-wQ-cFn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kFg-a9-OrL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="-116"/>
+        </scene>
+        <!--Cohorts-->
+        <scene sceneID="bpg-r7-q2w">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationSearch" automaticallyAdjustsScrollViewInsets="NO" id="5dc-8n-4mJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cohorts" image="779-users" selectedImage="779-users-selected" id="87Y-O1-W8w"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b54-I0-PzB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oAn-Bp-5c5" kind="relationship" relationship="rootViewController" id="G6c-fQ-8qJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7b2-LB-DKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562" y="-960"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="779-users" width="28" height="25"/>
+        <image name="779-users-selected" width="28" height="25"/>
+        <image name="Placeholder-image" width="840" height="600"/>
+    </resources>
+</document>
